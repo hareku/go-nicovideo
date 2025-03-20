@@ -25,7 +25,8 @@ type TimeshiftReservation struct {
 	} `json:"program"`
 
 	SocialGroup struct {
-		Name string `json:"name"`
+		Name          string `json:"name"`
+		SocialGroupID string `json:"socialGroupId"`
 	} `json:"socialGroup"`
 }
 
