@@ -96,7 +96,7 @@ func extractHTMLDataProps(r io.Reader) (string, error) {
 				if hasID {
 					for _, attr := range token.Attr {
 						if attr.Key == "data-props" {
-							return html.UnescapeString(attr.Val), nil
+							return attr.Val, nil
 						}
 					}
 				}
